@@ -1,8 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head><title>Thank You</title></head>
-<body style="text-align:center;padding:100px;font-family:Poppins">
-<h1>Thank You!</h1>
-<p>We will contact you soon.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | ZINTRONIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, rgba(5, 6, 8, 0) 60%), var(--bg-primary);
+            text-align: center;
+            padding: 20px;
+        }
+        .thanks-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: 60px 40px;
+            border-radius: 24px;
+            max-width: 500px;
+            box-shadow: var(--glow-shadow);
+        }
+        .thanks-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--color-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px auto;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #ffffff 50%, #b89020 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            color: var(--color-text-muted);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+            color: #000;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        .btn-back:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="thanks-card">
+        <div class="thanks-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h1>Technical Inquiry Received</h1>
+        <p>Thank you for reaching out to Zintronix. An engineering advisor will review your project details and contact you within 1 business day.</p>
+        <a href="index.html" class="btn-back">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Return to Homepage
+        </a>
+    </div>
 </body>
 </html>
